@@ -1,0 +1,147 @@
+.svgBoxBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+#svgBox {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+}
+
+#svgBoxList {
+  display: block;
+  width: 100%;
+  height: 200px;
+  overflow-y: scroll;
+  margin: 10px 0 10px 0;
+}
+
+#svgBoxButtons {
+  display: flex;
+}
+
+.svgBoxButton {
+  border: 1px solid black;
+  margin: 3px 5px;
+  padding: 5px 15px;
+  background-color: #21759b;
+  color: white;
+  cursor: pointer;
+}
+
+.svgBoxListItem {
+  display: inline;
+  width: 34px;
+  height: 34px;
+  margin: 2px;
+}
+
+.svgBoxListItem.filteredout {
+  display: none;
+}
+
+.svgBoxListItem:hover {
+  outline: 1px #21759b solid;
+}
+
+.svgBoxListItem[selected="selected"] {
+  background-color: #61b5db;
+}
+
+@media screen and (min-width: 768px) {
+  /* Change the default gutenberg editor width */
+  /*body.gutenberg-editor-page .editor-post-title__block,
+  body.gutenberg-editor-page .editor-default-block-appender,
+  body.gutenberg-editor-page .editor-block-list__block {
+    max-width: calc(100% - 57px) !important;
+  }
+  .block-editor__container .wp-block {
+    max-width: calc(100% - 57px) !important;
+  }
+  .block-editor-block-list__layout {
+    padding: 0;
+  }*/
+}
+
+.editor-block-list__block .oxygenberg-element *[contenteditable="true"]:hover,
+.editor-block-list__block .ct-image:hover {
+  outline: 1px solid #21759b;
+}
+
+.editor-block-list__block .oxygenberg-element *[contenteditable="true"]:focus {
+  outline: 1px solid #8f9a9e;
+}
+
+.sidebar-icon-box {
+  margin-bottom: 0 !important;
+}
+.sidebar-icon-button {
+  margin-bottom: 24px !important;
+}
+
+.oxy-dynamic-list:empty:after{
+  content: attr(gutenberg-placeholder);
+  font-family: monospace;
+  font-size: 20px;
+  display: block;
+  color: #444;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  border: 10px #ddd solid;
+  background: repeating-linear-gradient(45deg, #eee 0px, #eee 10px, #ddd 10px, #ddd 20px);
+  padding: 15%;
+}
+span.oxygenberg-element oxygenberg:after {
+  content: attr(gutenberg-placeholder);
+  font-family: monospace;
+  display: block;
+  color: #444;
+  font-weight: 400;
+  font-size: 0.8em;
+  text-align: center;
+  border: 4px #ddd solid;
+  background: repeating-linear-gradient(45deg, #eee 0px, #eee 10px, #ddd 10px, #ddd 20px);
+  padding: 0 5px 0 5px;
+}
+/* slider arrows fix */
+.unslider-arrow {
+    background-color:rgba(0, 0, 0, 0.2)!important;
+}
+.ct-slider > .oxygen-unslider-container {
+  padding: 0 40px 25px;
+}
+.ct-slider.oxygen-slider-remove-padding > .oxygen-unslider-container {
+  padding: 0 0 25px;
+}
+.ct-slider.oxygen-slider-dots-overlay > .oxygen-unslider-container {
+  padding-bottom: 0;
+}
+.ct-slider.oxygen-slider-horizontal > .oxygen-unslider-container > ul > li {
+    padding: 5px;
+}
+.oxygen-unslider-container > ul:not(.unslider-wrap) > li:not(:first-child) {
+  display:none;
+}
+.oxygen-unslider-container li, .oxygen-unslider-container ol, .oxygen-unslider-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+}

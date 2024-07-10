@@ -1,0 +1,1 @@
+SüŽf<?php exit; ?>a:1:{s:7:"content";a:3:{i:0;s:94:"C:\laragon\www\frellas\wp-ramon-consenza/wp-content/languages/themes/twentytwentyfour-pt_BR.mo";i:1;s:95:"C:\laragon\www\frellas\wp-ramon-consenza/wp-content/languages/themes/twentytwentythree-pt_BR.mo";i:2;s:93:"C:\laragon\www\frellas\wp-ramon-consenza/wp-content/languages/themes/twentytwentytwo-pt_BR.mo";}}

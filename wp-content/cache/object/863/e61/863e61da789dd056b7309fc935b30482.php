@@ -1,0 +1,1 @@
+÷îŽf<?php exit; ?>a:1:{s:7:"content";a:6:{s:27:"acf_first_activated_version";b:1;s:40:"_transient_timeout_ct_hot_reload_enabled";b:1;s:32:"_transient_ct_hot_reload_enabled";b:1;s:15:"wpcode_settings";b:1;s:16:"cptui_taxonomies";b:1;s:14:"theme_switched";b:1;}}
